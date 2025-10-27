@@ -26,22 +26,20 @@ window.addEventListener("load", () => {
   setTimeout(() => document.body.style.opacity = 1, 100);
 });
 // ===============================
-// FILTRO DE POSIÇÕES (Plantel)
+// FILTRO DE EQUIPAS DE FORMAÇÃO
 // ===============================
-const filterButtons = document.querySelectorAll(".filter-btn");
-const players = document.querySelectorAll(".player-card");
+const teamButtons = document.querySelectorAll(".filter-btn");
+const athletes = document.querySelectorAll(".player-card");
 
-filterButtons.forEach(btn => {
+teamButtons.forEach(btn => {
   btn.addEventListener("click", () => {
-    const position = btn.getAttribute("data-position");
+    const team = btn.getAttribute("data-team");
 
-    // muda estado ativo
-    filterButtons.forEach(b => b.classList.remove("active"));
+    teamButtons.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
 
-    // mostra/esconde jogadores
-    players.forEach(player => {
-      if (position === "all" || player.dataset.position === position) {
+    athletes.forEach(player => {
+      if (team === "all" || player.dataset.team === team) {
         player.style.display = "block";
       } else {
         player.style.display = "none";
@@ -49,3 +47,4 @@ filterButtons.forEach(btn => {
     });
   });
 });
+
