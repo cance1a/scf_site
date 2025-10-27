@@ -4,152 +4,136 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SC Freamunde — Início</title>
-  <meta name="description" content="SC Freamunde — Página oficial do clube de Freamunde." />
+  <meta name="description" content="SC Freamunde — Página inicial." />
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- ===== NAVBAR ===== -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <div class="brand" data-anim>
-        <a href="index.html" class="logo-link">
-          <img src="assets/logo.png" alt="SC Freamunde" class="logo"
-               onerror="this.style.display='none';document.querySelectorAll('.logo-fallback').forEach(e=>e.style.display='grid');">
-          <div class="logo-fallback">★</div>
-        </a>
-        <span>SC Freamunde</span>
-      </div>
 
-      <div class="menu" data-anim>
-        <a href="index.html#inicio" class="active">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="modalidades.html">Modalidades</a>
-        <a href="palmares.html">Palmarés</a>
-        <a href="plantel.html">Plantel</a>
-        <a href="claques.html">Claques</a>
-        <a href="hino.html">Hino</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contactos.html">Contactos</a>
-      </div>
+<!-- ========= NAV ========= -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <img src="assets/logo.png" alt="SC Freamunde" class="logo">
+      <span>SC Freamunde</span>
     </div>
-  </nav>
+    <div class="menu">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="modalidades.html">Modalidades</a>
+      <a href="palmares.html">Palmarés</a>
+      <a href="plantel.html">Plantel</a>
+      <a href="formacao.html">Formação</a>
+      <a href="hino.html">Hino</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contactos.html">Contactos</a>
+    </div>
+  </div>
+</nav>
 
-  <!-- ===== HERO / BANNER ===== -->
-  <header id="inicio" class="hero">
+<!-- ========= HERO ========= -->
+<header id="inicio" class="hero">
+  <div class="hero-bg" style="background-image:url('assets/banner.jpg');"></div>
+  <div class="container">
+    <h1>SC Freamunde</h1>
+    <p>Os Capões — Unidos pela Paixão, Fortes na Vitória</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <a class="btn primary" href="plantel.html">Conhecer o Plantel</a>
+      <a class="btn ghost" href="palmares.html">Ver Palmarés</a>
+    </div>
+  </div>
+</header>
+
+<!-- ========= CONTEÚDO ========= -->
+<main>
+  <section class="section">
     <div class="container">
-      <h1 data-anim>SC Freamunde</h1>
-      <p data-anim>Os Capões — Unidos pela Paixão, Fortes na Vitória</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap" data-anim>
-        <a class="btn primary" href="plantel.html">Conhecer o Plantel</a>
-        <a class="btn ghost" href="palmares.html">Ver Palmarés</a>
+      <div class="kpis">
+        <div class="kpi" data-anim>
+          <div class="pill blue">📅</div>
+          <h3>1933</h3>
+          <p>Fundação (19 de março)</p>
+        </div>
+        <div class="kpi" data-anim>
+          <div class="pill gold">🏟️</div>
+          <h3>5 000</h3>
+          <p>Capacidade do Estádio</p>
+        </div>
+        <div class="kpi" data-anim>
+          <div class="pill green">🏆</div>
+          <h3>11</h3>
+          <p>Títulos (reg./nac.)</p>
+        </div>
+        <div class="kpi" data-anim>
+          <div class="pill gray">🎽</div>
+          <h3>Azul & Branco</h3>
+          <p>Cores do Clube</p>
+        </div>
       </div>
     </div>
-  </header>
+  </section>
 
-  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-  <main>
-    <section class="section">
-      <div class="container">
-        <div class="kpis">
-          <div class="kpi" data-anim>
-            <div class="pill blue">📅</div>
-            <h3>1933</h3>
-            <p>Fundação (19 de março)</p>
-          </div>
-          <div class="kpi" data-anim>
-            <div class="pill gold">🏟️</div>
-            <h3>5 000</h3>
-            <p>Capacidade do Estádio</p>
-          </div>
-          <div class="kpi" data-anim>
-            <div class="pill green">🏆</div>
-            <h3>11</h3>
-            <p>Títulos (reg./nac.)</p>
-          </div>
-          <div class="kpi" data-anim>
-            <div class="pill gray">🎽</div>
-            <h3>Azul & Branco</h3>
-            <p>Cores do Clube</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section bg-soft">
-      <div class="container">
-        <div class="row">
-          <article class="card" data-anim>
-            <img src="assets/sobre1.jpg" alt="Identidade do Clube">
-            <div class="body">
-              <h3>Identidade</h3>
-              <p class="meta">
-                Alcunha: <b>Os Capões</b> • Mascote: <b>Estrelinha</b> • Rival: <b>FC Paços de Ferreira</b>
-              </p>
-              <p>
-                Presidente: <b>Rui Vingança</b> • Treinador: <b>Mauro Silva</b> •
-                Patrocínios: Penafiel Park Hotel, Sofás da Fábrica, Café Teles.
-              </p>
-              <a class="btn primary" href="sobre.html" style="margin-top:10px">Saber mais</a>
-            </div>
-          </article>
-
-          <article class="card" data-anim>
-            <img src="assets/estadio.jpg" alt="Complexo Desportivo do SC Freamunde">
-            <div class="body">
-              <h3>Complexo Desportivo</h3>
-              <p>
-                Inaugurado em 1990 • 5.000 lugares • campos de treino (2 sintéticos + 1 pelado) • plano de expansão.
-              </p>
-              <a class="btn ghost" href="sobre.html#estadio" style="margin-top:10px">Ver Estádio</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+  <section class="section bg-soft">
     <div class="container">
-      <div class="cols">
-        <div data-anim>
-          <div class="brand">
-            <div class="logo-fallback">★</div>
-            <b>SC Freamunde</b>
+      <div class="row">
+        <article class="card" data-anim>
+          <div class="body">
+            <h3>Identidade</h3>
+            <p class="meta">
+              Alcunha: <b>Os Capões</b> • Mascote: <b>Estrelinha</b> • Rival: <b>FC Paços de Ferreira</b>
+            </p>
+            <p>
+              Presidente: <b>Rui Vingança</b> • Treinador: <b>Mauro Silva</b><br>
+              Patrocínios: Penafiel Park Hotel, Sofás da Fábrica, Café Teles.
+            </p>
+            <a class="btn primary" href="sobre.html">Saber mais</a>
           </div>
-          <p class="meta" style="color:#c6cbda;margin-top:10px">
-            Clube de Freamunde (Porto), fundado em 1933.
-          </p>
-        </div>
+        </article>
 
-        <div data-anim>
-          <strong>Links Rápidos</strong>
-          <div class="meta" style="display:grid;gap:8px;margin-top:10px">
-            <a href="sobre.html">Sobre</a>
-            <a href="modalidades.html">Modalidades</a>
-            <a href="plantel.html">Plantel</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="contactos.html">Contactos</a>
+        <article class="card" data-anim>
+          <div class="body">
+            <h3>Complexo Desportivo</h3>
+            <p>
+              Inaugurado em 1990 • 5 000 lugares • Campos de treino (2 sintéticos + 1 pelado) • Plano de expansão.
+            </p>
+            <a class="btn ghost" href="sobre.html#estadio">Ver Estádio</a>
           </div>
-        </div>
-
-        <div data-anim>
-          <strong>Parceiros</strong>
-          <div class="meta" style="display:grid;gap:6px;margin-top:10px">
-            <span>Penafiel Park Hotel</span>
-            <span>Sofás da Fábrica</span>
-            <span>Café Teles</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="copy">
-        © 2024 SC Freamunde. Todos os direitos reservados.
+        </article>
       </div>
     </div>
-  </footer>
+  </section>
+</main>
 
-  <script src="script.js"></script>
+<!-- ========= FOOTER ========= -->
+<footer class="footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <div class="brand"><img src="assets/logo.png" alt="SC Freamunde" class="logo"><b>SC Freamunde</b></div>
+        <p style="color:#c6cbda;margin-top:10px">Clube de Freamunde (Porto), fundado em 1933.</p>
+      </div>
+      <div>
+        <strong>Links Rápidos</strong>
+        <div style="display:grid;gap:8px;margin-top:10px">
+          <a href="sobre.html">Sobre</a>
+          <a href="modalidades.html">Modalidades</a>
+          <a href="plantel.html">Plantel</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="contactos.html">Contactos</a>
+        </div>
+      </div>
+      <div>
+        <strong>Parceiros</strong>
+        <div style="display:grid;gap:6px;margin-top:10px">
+          <span>Penafiel Park Hotel</span>
+          <span>Sofás da Fábrica</span>
+          <span>Café Teles</span>
+        </div>
+      </div>
+    </div>
+    <div class="copy">© 2024 SC Freamunde. Todos os direitos reservados.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
